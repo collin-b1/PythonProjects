@@ -58,7 +58,7 @@ class Maze:
 
 def main():
     maze = Maze(int(input('width?: ')), int(input('height?: ')))
-    print(maze.__str__())
+    print(str(maze))
 
 
 if __name__ == "__main__":
