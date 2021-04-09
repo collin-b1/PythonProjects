@@ -33,7 +33,7 @@ class Matrix:
 
         count = 1
 
-        if row + 1 < self.width and not visited[row + 1][col]:
+        if row + 1 < self.height and not visited[row + 1][col]:
             visited[row + 1][col] = True
             count += self.at_count(row + 1, col, visited)
 
@@ -41,7 +41,7 @@ class Matrix:
             visited[row - 1][col] = True
             count += self.at_count(row - 1, col, visited)
 
-        if col + 1 < self.height and not visited[row][col + 1]:
+        if col + 1 < self.width and not visited[row][col + 1]:
             visited[row][col + 1] = True
             count += self.at_count(row, col + 1, visited)
 
